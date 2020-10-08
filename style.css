@@ -1,0 +1,110 @@
+div label input {
+   margin-right:100px;
+}
+body {
+	font-family: 'Helvetica';
+	background-color: #d9dede;
+}
+
+.ck-button {
+	margin: 4px 0;
+	background-color: transparent;
+	border-radius:4px;
+	border: 2px solid #1A84F1;
+	transition: .1s ease-in;
+	color: #1A84F1;
+}
+
+.ck-button:hover {
+	background: #1A84F1;
+	color: #fff;
+}
+
+.ck-button label {
+	display: block;
+}
+
+.ck-button label span {
+	text-align:center;
+	display:flex;
+	padding: 10px;
+	cursor: pointer;
+	justify-content: space-between;
+}
+
+.ck-button label input {
+	position: absolute;
+	visibility: hidden
+}
+
+.ck-button input:checked + span {
+	background-color: #0d60b3;
+	color:#fff;
+}
+
+.m-0 {
+	margin: 0;
+}
+
+.checkbox-container {
+	display: flex;
+	flex-direction: column;
+	width: 50%;
+	max-width: 400px;
+	padding: 40px 60px;
+	padding-top: 130px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	background-color: #fff;
+	box-shadow: 0 0px 12px 4px rgba(0, 0, 0, 0.1);
+	border-radius: 4px;
+}
+
+.checkbox-container p {
+	text-align: center;
+}
+
+.result {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+	padding: 10px;
+	border-top: 2px dashed #5f5f5f;
+	align-items: center;
+}
+
+.result h2 {
+	font-size: 1.2em;
+	color: #5f5f5f;
+}
+
+.result h2:last-child {
+	color: #1A84F1;
+	font-size: 1.8em;
+	font-weight: bold;
+}
+
+.checkbox-container h1 {
+	position: absolute;
+	top: 50px;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-weight: bold;
+	color: #1A84F1;
+	margin: 0;
+}
+
+.checkbox-container h1:after {
+	display: block;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 7px;
+	background-color: #1A84F1;
+}
+
